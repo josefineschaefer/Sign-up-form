@@ -6,6 +6,8 @@
   top: 0;
   overflow-x: hidden;
   justify-content: center;
+  font-family: "Karla", sans-serif;
+  color: #273043;
 }
 
 .left {
@@ -26,33 +28,43 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 7em;
+  padding: 0 4em;
 }
 
 form input {
   margin: 10px 0;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #a0a0a0;
+  border: 1px solid #9197AE;
 }
 
 form input[type="checkbox"] {
-  accent-color: rgb(207, 204, 206);
+  accent-color: #9197AE;
   margin: 10px 10px 10px 0;
 }
 
 .logo {
   width: 40px;
   margin: 0 auto;
+  padding: 40px 20px;
 }
 
 h1 {
-  color: #d93650;
+  color: #F02D3A;
   text-transform: uppercase;
+  font-family: "Rubik", system-ui;
+  font-weight: 500;
+  letter-spacing: .1em;
 }
 
 .submit {
-  background-color: #f9e08f;
+  background-color: #F9E08C;
   border-style: none;
   width: 100px;
 }
+
+a{
+    color: #DD0426;
+}
+
+
