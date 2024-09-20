@@ -1,54 +1,60 @@
-form{
-    display: flex;
-    flex-direction: column;
-    padding: 6em;
-    align-items: left;
-    justify-content: center;
-    height: 100%;
+.split {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+.left {
+  left: 0;
+  flex-direction: column;
+}
+
+.right {
+  right: 0;
+}
+
+.social {
+margin: auto;
+text-align: center;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 6em;
+  justify-content: center;
+  height: 100%;
 }
 
 form input {
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #a0a0a0;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #a0a0a0;
 }
 
 form input[type="checkbox"] {
-    accent-color: rgb(207, 204, 206);
-    margin: 10px 10px 10px 0;
-}
-.split {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-  
-  .left {
-    left: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .right {
-    right: 0;
-  }
-
-.logo{
-    width: 40px;
-    margin: 0 auto;
+  accent-color: rgb(207, 204, 206);
+  margin: 10px 10px 10px 0;
 }
 
-h1{
-    color: #d93650;
-    text-transform: uppercase;
+.logo {
+  width: 40px;
+  margin: 0 auto;
 }
 
-.submit{
-    background-color: #f9e08f;   
-    border-style: none;
-    width: 100px;
+h1 {
+  color: #d93650;
+  text-transform: uppercase;
+}
+
+.submit {
+  background-color: #f9e08f;
+  border-style: none;
+  width: 100px;
 }
