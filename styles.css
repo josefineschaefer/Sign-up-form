@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   overflow-x: hidden;
-  padding: 20px;
+  justify-content: center;
 }
 
 .left {
@@ -15,20 +15,18 @@
 
 .right {
   right: 0;
+  object-fit: cover;
 }
 
 .social {
-margin: auto;
-text-align: center;
-
+  text-align: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  padding: 6em;
   justify-content: center;
-  height: 100%;
+  padding: 7em;
 }
 
 form input {
