@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head> 
-    <meta charset="utf-8" />
-    <title>Sign up Page</title>
-    <meta name="viewport" content="width=device-width" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Sign up Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+  <div class="split left">
+    <div class="social">
     <h1>Sign up with</h1>
-    <img href="assets/facebook_logo.svg" alt="facebook" />
-    <img href="assets/twitter_logo.svg" alt="twitter" />
-    <img href="assets/instagram_logo.svg" alt="instagram" />
+    <img class="logo" src="assets/facebook_logo.svg" alt="facebook" />
+    <img class="logo" src="assets/twitter_logo.svg" alt="twitter" />
+    <img class="logo" src="assets/instagram_logo.svg" alt="instagram" />
     <p>or use your email for registration:</p>
-    <input type="text" placeholder="Name" />
-    <input type="text" placeholder="E-mail" />
-    <input type="text" placeholder="Password" />
-    <input type="checkbox">I agree to the Terms and Privacy Policy</input>
-    <button>Sign up</button>
-   <a href="login.html">I already have an account</a>
-  </body>
+  </div>
+    <form action="/action_page.php">
+      <label for="Name">Name:</label>
+      <input type="text" placeholder="Name" id="Name" />
+      <label for="E-mail">E-mail:</label>
+      <input type="text" placeholder="E-mail" id="E-mail" />
+      <label for="pass">Password (8 characters minimum):</label>
+      <input type="password" id="pass" name="password" minlength="8" required />
+      <div>
+        <input type="checkbox" id="Terms" checked /><label for="Terms">I agree to the Terms and Privacy Policy</label>
+      </div>
+      <input class="submit" type="submit" value="Sign Up">
+      <a href="login.html">I already have an account</a>
+    </form>
+  </div>
+  <img class="split right" src="assets/illustration.jpeg"
+    alt="colorful illustration of many different kinds of people" />
+</body>
+
 </html>

@@ -1,0 +1,58 @@
+.split {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+  justify-content: center;
+}
+
+.left {
+  left: 0;
+  flex-direction: column;
+}
+
+.right {
+  right: 0;
+  object-fit: cover;
+}
+
+.social {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7em;
+}
+
+form input {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #a0a0a0;
+}
+
+form input[type="checkbox"] {
+  accent-color: rgb(207, 204, 206);
+  margin: 10px 10px 10px 0;
+}
+
+.logo {
+  width: 40px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #d93650;
+  text-transform: uppercase;
+}
+
+.submit {
+  background-color: #f9e08f;
+  border-style: none;
+  width: 100px;
+}
