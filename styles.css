@@ -1,3 +1,23 @@
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 6em;
+    align-items: left;
+    justify-content: center;
+    height: 100%;
+}
+
+form input {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #a0a0a0;
+}
+
+form input[type="checkbox"] {
+    accent-color: rgb(207, 204, 206);
+    margin: 10px 10px 10px 0;
+}
 .split {
     height: 100%;
     width: 50%;
