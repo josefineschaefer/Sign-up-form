@@ -1,11 +1,11 @@
 /* CSS Variables */
 :root {
   --primary-text-color: #273043;
-  --accent-color: #d93845;
+  --accent-color: #AD390D;
   --secondary-color: #9197ae;
-  --button-bg-color: #f9e08c;
+  --button-bg-color: #F9E08C;
   --button-text-color: #504b2f;
-  --link-color: #dd0426;
+  --link-color: #1B66B7;
   --font-family-primary: "Karla", sans-serif;
   --font-family-secondary: "Rubik", system-ui;
 }
@@ -36,7 +36,7 @@
   }
 }
 
-/* Mobile view adjustments */
+/* Mobile view */
 @media only screen and (max-width: 768px) {
   .split {
     display: block; 
