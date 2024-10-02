@@ -8,8 +8,8 @@ To practise HTML, CSS and a bit of Javascript, in this project, I build a sign u
 
 ## Result - Desktop 
 
-<img width="1504" alt="Desktop Viewport Login Form with colorful drawing on right side" src="https://github.com/user-attachments/assets/9f0908e8-6f32-4d71-80eb-4581994097b0">
+<img width="700" alt="Desktop Viewport Login Form with colorful drawing on right side" src="https://github.com/user-attachments/assets/9f0908e8-6f32-4d71-80eb-4581994097b0">
 
 ## Result - Mobile 
 
-<img width="579" alt="Mobile version of Login Form with colorful drawing as backdrop for form" src="https://github.com/user-attachments/assets/116efdc9-ed5f-470a-88c1-8cf2b6666205">
+<img width="400" alt="Mobile version of Login Form with colorful drawing as backdrop for form" src="https://github.com/user-attachments/assets/116efdc9-ed5f-470a-88c1-8cf2b6666205">
