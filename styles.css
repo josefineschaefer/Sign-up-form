@@ -1,3 +1,15 @@
+/* CSS Variables */
+:root {
+  --primary-text-color: #273043;
+  --accent-color: #d93845;
+  --secondary-color: #9197ae;
+  --button-bg-color: #f9e08c;
+  --button-text-color: #504b2f;
+  --link-color: #dd0426;
+  --font-family-primary: "Karla", sans-serif;
+  --font-family-secondary: "Rubik", system-ui;
+}
+
 .split {
   display: flex;
   height: 100%;
@@ -6,8 +18,8 @@
   top: 0;
   overflow-x: hidden;
   justify-content: center;
-  font-family: "Karla", sans-serif;
-  color: #273043;
+  font-family: var(--font-family-primary);
+  color: var(--primary-text-color);
 }
 
 .left {
@@ -35,11 +47,11 @@ form input {
   margin: 10px 0;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #9197AE;
+  border: 1px solid var(--secondary-color);
 }
 
 form input[type="checkbox"] {
-  accent-color: #9197AE;
+  accent-color: var(--secondary-color);
   margin: 10px 10px 10px 0;
 }
 
@@ -50,21 +62,32 @@ form input[type="checkbox"] {
 }
 
 h1 {
-  color: #F02D3A;
+  color: var(--accent-color);
   text-transform: uppercase;
-  font-family: "Rubik", system-ui;
+  font-family: var(--font-family-secondary);
   font-weight: 500;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
+}
+
+button {
+  background-color: var(--button-bg-color);
+  border: none;
+  padding: 8px 50px;
+  margin: 20px;
+  font-size: 1.5em;
+  font-weight: lighter;
+  color: var(--button-text-color);
+  border-radius: 5px;
 }
 
 .submit {
-  background-color: #F9E08C;
-  border-style: none;
-  width: 100px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-a{
-    color: #DD0426;
+a {
+  color: var(--link-color);
 }
-
-
