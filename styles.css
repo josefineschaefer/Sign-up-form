@@ -1,11 +1,11 @@
 /* CSS Variables */
 :root {
   --primary-text-color: #273043;
-  --accent-color: #AD390D;
+  --accent-color: #ad390d;
   --secondary-color: #9197ae;
-  --button-bg-color: #F9E08C;
+  --button-bg-color: #f9e08c;
   --button-text-color: #504b2f;
-  --link-color: #1B66B7;
+  --link-color: #1b66b7;
   --font-family-primary: "Karla", sans-serif;
   --font-family-secondary: "Rubik", system-ui;
 }
@@ -25,12 +25,12 @@
     position: fixed;
     top: 0;
   }
-  
+
   .left {
     left: 0;
     flex-direction: column;
   }
-  
+
   .right {
     right: 0;
   }
@@ -39,11 +39,11 @@
 /* Mobile view */
 @media only screen and (max-width: 768px) {
   .split {
-    display: block; 
+    display: block;
   }
 
   .right {
-    display: none; 
+    display: none;
   }
 
   .left {
@@ -57,7 +57,7 @@
 
   .backdrop {
     background: rgba(241, 241, 241, 0.9);
-    margin:0 auto;
+    margin: 0 auto;
     width: 80%;
     height: 80%;
   }
@@ -65,10 +65,9 @@
   form {
     min-width: 250px;
   }
-
 }
 
-.social {
+.social-sign-up {
   text-align: center;
 }
 
@@ -77,24 +76,33 @@ form {
   flex-direction: column;
   justify-content: center;
   padding: 0 4em;
+
+  :focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+  }
+}
+
+button,
+input {
+  border-radius: 5px;
 }
 
 form input {
   margin: 10px 0;
   padding: 10px;
-  border-radius: 5px;
   border: 1px solid var(--secondary-color);
 }
 
 form input[type="checkbox"] {
   accent-color: var(--secondary-color);
-  margin: 10px 10px 10px 0;
+  margin: 10px;
 }
 
 .logo {
   width: 40px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 20px;
 }
 
 h1 {
@@ -102,6 +110,7 @@ h1 {
   text-transform: uppercase;
   font-family: var(--font-family-secondary);
   font-weight: 500;
+  font-size: 1.8em;
   letter-spacing: 0.1em;
 }
 
@@ -113,7 +122,6 @@ button {
   font-size: 1.5em;
   font-weight: lighter;
   color: var(--button-text-color);
-  border-radius: 5px;
 }
 
 .submit {
