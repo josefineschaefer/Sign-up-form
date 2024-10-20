@@ -15,9 +15,9 @@
 
   <body>
     <main>
-      <div class="split left">
-        <div class="backdrop">
-          <section class="social-sign-up">
+      <div class="layout layout__left">
+        <div class="layout__backdrop">
+          <section class="layout__socials">
             <h1>Sign up with</h1>
             <a
               href="https://www.facebook.com"
@@ -40,12 +40,24 @@
             </a>
             <p>or use your email for registration:</p>
           </section>
-          <form action="/action_page.php">
+          <form class="layout__form" action="/action_page.php">
             <label for="name">Name:</label>
             <input type="text" placeholder="Name" id="name" />
             <label for="email">E-mail:</label>
             <input type="email" placeholder="E-mail" id="email" required />
-            <label for="pass">Password (8 characters minimum):</label>
+            <label for="pass"
+              >Password
+              <span class="tooltip-container">
+                <img
+                  class="help-icon"
+                  src="assets/question.png"
+                  alt="Help icon"
+                />
+                <span class="tooltip-help">
+                  Minimum 8 Characters, at least one uppercase.
+                </span>
+              </span>
+            </label>
             <input
               type="password"
               id="pass"
@@ -66,7 +78,7 @@
           </form>
         </div>
       </div>
-      <div class="split right">
+      <div class="layout layout__right">
         <img
           src="assets/illustration.jpeg"
           alt="An artistic illustration showing diverse people in various activities"
