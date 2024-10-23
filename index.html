@@ -1,66 +1,98 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sign up Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Sign up Page</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet" />
-  <meta name="viewport" content="width=device-width" />
-</head>
-
-<body>
-  <main>
-    <div class="layout layout__left">
-      <div class="layout__backdrop">
-        <section class="layout__socials">
-          <h1>Sign up with</h1>
-          <a href="https://www.facebook.com" aria-label="Sign up with Facebook">
-            <img class="logo" src="assets/facebook_logo.svg" alt="facebook" /></a>
-          <a href="https://www.twitter.com" aria-label="Sign up with Twitter">
-            <img class="logo" src="assets/twitter_logo.svg" alt="twitter" /></a>
-          <a href="https://www.instagram.com" aria-label="Sign up with Instagram">
-            <img class="logo" src="assets/instagram_logo.svg" alt="instagram" />
-          </a>
-          <p>or use your email for registration:</p>
-        </section>
-        <form class="layout__form" action="/action_page.php">
-          <label for="name">Name:</label>
-          <input type="text" placeholder="Name" id="name" />
-          <label for="email">E-mail:</label>
-          <input type="email" placeholder="E-mail" id="email" required />
-          <label for="pass">Password
-            <div class="tooltip-container">
-              <img class="help-icon" src="assets/question.png" alt="Help icon" />
-              <span class="tooltip-help" role="tooltip" id="passwordrules">
-                Min. 8 characters,<br />
-                one uppercase.
-              </span>
+  <body>
+    <main>
+      <div class="layout layout__left">
+        <div class="layout__backdrop">
+          <section class="layout__socials">
+            <h1>Sign up with</h1>
+            <a
+              href="https://www.facebook.com"
+              aria-label="Sign up with Facebook"
+            >
+              <img class="logo" src="assets/facebook_logo.svg" alt="facebook"
+            /></a>
+            <a href="https://www.twitter.com" aria-label="Sign up with Twitter">
+              <img class="logo" src="assets/twitter_logo.svg" alt="twitter"
+            /></a>
+            <a
+              href="https://www.instagram.com"
+              aria-label="Sign up with Instagram"
+            >
+              <img
+                class="logo"
+                src="assets/instagram_logo.svg"
+                alt="instagram"
+              />
+            </a>
+            <p>or use your email for registration:</p>
+          </section>
+          <form class="layout__form" action="/action_page.php">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Name" id="name" />
+            <label for="email">E-mail:</label>
+            <input type="email" placeholder="E-mail" id="email" required />
+            <label for="pass"
+              >Password
+              <div class="tooltip-container">
+                <img
+                  class="help-icon"
+                  src="assets/question.png"
+                  alt="Help icon"
+                />
+                <span class="tooltip-help" role="tooltip" id="passwordrules">
+                  Min. 8 characters,<br />
+                  one uppercase.
+                </span>
+              </div>
+            </label>
+            <input
+              type="password"
+              id="pass"
+              minlength="8"
+              required
+              placeholder="Password"
+              aria-describedby="passwordrules"
+            />
+            <div>
+              <input type="checkbox" id="Terms" checked /><label for="Terms"
+                >I agree to the <a href="google.com">Terms</a>
+                and
+                <a href="google.com">Privacy Policy</a></label
+              >
             </div>
-          </label>
-          <input type="password" id="pass" minlength="8" required placeholder="Password"
-            aria-describedby="passwordrules" />
-          <div>
-            <input type="checkbox" id="Terms" checked /><label for="Terms">I agree to the <a href="google.com">Terms</a>
-              and
-              <a href="google.com">Privacy Policy</a></label>
-          </div>
-          <div class="submit">
-            <button type="submit">Sign Up</button>
-            <a href="login.html">I already have an account</a>
-          </div>
-        </form>
+            <div class="submit">
+              <button type="submit" onclick="loginConfirmation()">Sign Up</button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
-    <div class="layout layout__right">
-      <img src="assets/illustration.jpeg" alt="An artistic illustration showing diverse people in various activities"
-        loading="lazy" />
-    </div>
-  </main>
-</body>
+      <div class="layout layout__right">
+        <img
+          src="assets/illustration.jpeg"
+          alt="An artistic illustration showing diverse people in various activities"
+          loading="lazy"
+        />
+      </div>
+    </main>
 
+    <script>
+      function loginConfirmation() {
+        console.log("You are successfully signed up, yay!");
+      }
+    </script>
+  </body>
 </html>
