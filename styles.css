@@ -11,7 +11,6 @@
 }
 
 * {
-  justify-content: center;
   font-family: var(--font-family-primary);
   color: var(--primary-text-color);
 }
@@ -44,6 +43,7 @@
 
   .layout__form {
     min-width: 250px;
+    padding: 2em;
   }
 }
 
@@ -59,6 +59,7 @@
   .layout__left {
     left: 0;
     flex-direction: column;
+    margin-top: 10%;
   }
 
   .layout__right {
@@ -236,17 +237,7 @@ img {
   color: rgb(9, 97, 9);
 }
 
-.valid:before {
-  position: relative;
-  left: -35px;
-}
-
 /* Add a red text color and an "x" icon when the requirements are wrong */
 .invalid {
   color: rgb(135, 12, 12);
-}
-
-.invalid:before {
-  position: relative;
-  left: -35px;
 }
