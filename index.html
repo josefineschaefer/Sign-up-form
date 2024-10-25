@@ -62,20 +62,38 @@
             <input
               type="password"
               id="pass"
-              minlength="8"
               required
               placeholder="Password"
               aria-describedby="passwordrules"
+              pattern="(?=.*[A-Z]).{8,}"
             />
+            <div id="message">
+              <p>Password must contain the following:</p>
+            <ul>
+              <li id="capital" class="invalid">A capital (uppercase) letter</li>
+              <li id="length" class="invalid">Minimum 8 characters</li>
+            </ul>
+          </div>
             <div>
-              <input type="checkbox" id="Terms" checked /><label for="Terms"
-                >I agree to the <a href="google.com">Terms</a>
+              <input type="checkbox" id="TermsPrivacyCheckbox" checked /><label
+                for="TermsPrivacyCheckbox"
+                >I agree to the <a id="Terms">Terms</a>
                 and
-                <a href="google.com">Privacy Policy</a></label
+                <a id="Privacy">Privacy Policy</a></label
               >
             </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+              </div>
+            </div>
             <div class="submit">
-              <button type="submit" onclick="loginConfirmation()">Sign Up</button>
+              <button type="submit" onclick="loginConfirmation()">
+                Sign Up
+              </button>
             </div>
           </form>
         </div>
@@ -93,6 +111,69 @@
       function loginConfirmation() {
         console.log("You are successfully signed up, yay!");
       }
+
+      // Get the modal
+      const modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      const btn = document.getElementById("Terms");
+
+      // Get the <span> element that closes the modal
+      const span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      const myInput = document.getElementById("pass");
+      const letter = document.getElementById("letter");
+      const capital = document.getElementById("capital");
+      const length = document.getElementById("length");
+
+      // When the user clicks on the password field, show the message box
+      myInput.onfocus = function () {
+        document.getElementById("message").style.display = "block";
+      };
+
+      // When the user clicks outside of the password field, hide the message box
+      myInput.onblur = function () {
+        document.getElementById("message").style.display = "none";
+      };
+
+      // When the user starts to type something inside the password field
+      myInput.onkeyup = function () {
+        // Validate capital letters
+        const upperCaseLetters = /[A-Z]/g;
+        if (myInput.value.match(upperCaseLetters)) {
+          capital.classList.remove("invalid");
+          capital.classList.add("valid");
+        } else {
+          capital.classList.remove("valid");
+          capital.classList.add("invalid");
+        }
+
+        // Validate length
+        if (myInput.value.length >= 8) {
+          length.classList.remove("invalid");
+          length.classList.add("valid");
+        } else {
+          length.classList.remove("valid");
+          length.classList.add("invalid");
+        }
+      };
     </script>
   </body>
 </html>
