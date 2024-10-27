@@ -234,8 +234,14 @@ img {
   font-size: 14px;
 }
 
-#message li {
+#message p {
   margin: auto;
+}
+
+.valid:before {
+  position: relative;
+  left: -5px;
+  content: "✔";
 }
 
 /* Add a green text color and a checkmark when the requirements are right */
@@ -246,4 +252,10 @@ img {
 /* Add a red text color and an "x" icon when the requirements are wrong */
 .invalid {
   color: rgb(135, 12, 12);
+}
+
+.invalid:before {
+  position: relative;
+  left: -5px;
+  content: "✖";
 }

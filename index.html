@@ -68,11 +68,9 @@
               pattern="(?=.*[A-Z]).{8,}"
             />
             <div id="message">
-              <p>Password must contain the following:</p>
-            <ul>
-              <li id="capital" class="invalid">A capital (uppercase) letter</li>
-              <li id="length" class="invalid">Minimum 8 characters</li>
-            </ul>
+              <h4>Password must contain the following:</h4>
+              <p id="capital" class="invalid">A capital (uppercase) letter</p>
+              <p id="length" class="invalid">Minimum 8 characters</p>
           </div>
             <div>
               <input type="checkbox" id="TermsPrivacyCheckbox" checked /><label
@@ -116,13 +114,13 @@
       const modal = document.getElementById("myModal");
 
       // Get the button that opens the modal
-      const btn = document.getElementById("Terms");
+      const terms = document.getElementById("Terms");
 
       // Get the <span> element that closes the modal
       const span = document.getElementsByClassName("close")[0];
 
-      // When the user clicks on the button, open the modal
-      btn.onclick = function () {
+      // When the user clicks on the terms, open the modal
+      terms.onclick = function () {
         modal.style.display = "block";
       };
 
