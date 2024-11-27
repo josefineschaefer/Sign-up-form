@@ -13,3 +13,8 @@ To practise HTML, CSS and a bit of Javascript, in this project, I build a sign u
 ## Result - Mobile 
 
 <img width="400" alt="Mobile version of Login Form with colorful drawing as backdrop for form" src="https://github.com/user-attachments/assets/116efdc9-ed5f-470a-88c1-8cf2b6666205">
+
+## Credits
+
+The beautiful illustration is a 
+<a href="https://www.freepik.com/vectors/pattern">pattern vector created by pikisuperstar - www.freepik.com</a> 
