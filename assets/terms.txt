@@ -1,0 +1,7 @@
+<h1>Terms and Conditions</h1>
+<p>Welcome to our service. By continuing, you agree to the following:</p>
+<ul>
+  <li><strong>Responsibility:</strong> Use the service as intended.</li>
+  <li><strong>Changes:</strong> We may update the terms without prior notice.</li>
+</ul>
+<p>For support, contact us at support@example.com.</p>

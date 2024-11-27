@@ -1,0 +1,32 @@
+<h1>Privacy Policy</h1>
+<p>We value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data.</p>
+
+<h2>1. Information We Collect</h2>
+<ul>
+  <li><strong>Personal Information:</strong> Name, email address, and other information you provide during registration.</li>
+  <li><strong>Usage Data:</strong> Details about your interactions with our platform, including access times and pages visited.</li>
+</ul>
+
+<h2>2. How We Use Your Information</h2>
+<p>We use your information to:</p>
+<ul>
+  <li>Provide and improve our services.</li>
+  <li>Communicate with you regarding updates and promotions.</li>
+  <li>Ensure the security of our platform.</li>
+</ul>
+
+<h2>3. Data Sharing and Storage</h2>
+<p>We do not sell your data. Your information is securely stored and may be shared with trusted third parties for service delivery, subject to confidentiality agreements.</p>
+
+<h2>4. Your Rights</h2>
+<p>You have the right to:</p>
+<ul>
+  <li>Access the data we hold about you.</li>
+  <li>Request corrections or deletion of your data.</li>
+  <li>Withdraw your consent to data processing.</li>
+</ul>
+
+<h2>5. Contact Us</h2>
+<p>If you have any questions about this policy, please reach out to us at <a href="mailto:privacy@example.com">privacy@example.com</a>.</p>
+
+<p>Effective Date: November 1, 2024</p>
