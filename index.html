@@ -83,15 +83,25 @@
               >
             </div>
             <!-- The Modal -->
-            <div id="myModal" class="modal">
+            <div
+              id="myModal"
+              class="modal"
+              role="alertdialog"
+              aria-modal="true"
+              aria-labelledby="Terms and Conditions"
+            >
               <!-- Modal content -->
               <div class="modal-content">
-                <button class="close">&times;</button>
+                <button class="close-button">&times;</button>
                 <p class="loremIpsum">Loading...</p>
               </div>
             </div>
             <div class="submit">
-              <button type="submit" onclick="loginConfirmation()">
+              <button
+                class="sign-up-button"
+                type="submit"
+                onclick="loginConfirmation()"
+              >
                 Sign Up
               </button>
             </div>
@@ -149,7 +159,7 @@
       });
 
       // Get the <span> element that closes the modal
-      const span = document.getElementsByClassName("close")[0];
+      const span = document.getElementsByClassName("close-button")[0];
 
       // When the user clicks on <span> (x), close the modal
       span.onclick = function () {

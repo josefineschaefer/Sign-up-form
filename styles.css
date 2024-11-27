@@ -156,7 +156,7 @@ h1 {
   letter-spacing: 0.1em;
 }
 
-button {
+.sign-up-button {
   background-color: var(--button-bg-color);
   border: none;
   padding: 8px 50px;
@@ -213,18 +213,24 @@ img {
 }
 
 /* The Close Button */
-.close {
-  color: #000;
+.close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  border: none;
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+  box-sizing: border-box;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
+.close-button:hover,
+.close-button:focus {
   cursor: pointer;
+  background-color: var(--button-bg-color);
 }
 
 /* The message box is shown when the user clicks on the password field */
