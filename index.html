@@ -71,25 +71,37 @@
               <h4>Password must contain the following:</h4>
               <p id="capital" class="invalid">A capital (uppercase) letter</p>
               <p id="length" class="invalid">Minimum 8 characters</p>
-          </div>
+            </div>
             <div>
               <input type="checkbox" id="TermsPrivacyCheckbox" checked /><label
                 for="TermsPrivacyCheckbox"
-                >I agree to the <a id="Terms">Terms</a>
+                >I agree to the <a href="#myModal" id="Terms">Terms</a>
                 and
-                <a id="Privacy">Privacy Policy</a></label
+                <a id="Privacy" id="Privacy" href="#myModal"
+                  >Privacy Policy</a
+                ></label
               >
             </div>
             <!-- The Modal -->
-            <div id="myModal" class="modal">
+            <div
+              id="myModal"
+              class="modal"
+              role="alertdialog"
+              aria-modal="true"
+              aria-labelledby="Terms and Conditions"
+            >
               <!-- Modal content -->
               <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
+                <button class="close-button">&times;</button>
+                <p class="loremIpsum">Loading...</p>
               </div>
             </div>
             <div class="submit">
-              <button type="submit" onclick="loginConfirmation()">
+              <button
+                class="sign-up-button"
+                type="submit"
+                onclick="loginConfirmation()"
+              >
                 Sign Up
               </button>
             </div>
@@ -112,17 +124,42 @@
 
       // Get the modal
       const modal = document.getElementById("myModal");
+      // Get the modal and modal content element
+      const modalContent = document.querySelector(
+        ".modal-content p.loremIpsum"
+      );
 
-      // Get the button that opens the modal
-      const terms = document.getElementById("Terms");
+      // Get the links
+      const termsLink = document.getElementById("Terms");
+      const privacyLink = document.getElementById("Privacy");
+
+      // Function to load content into the modal
+      async function loadContent(url) {
+        try {
+          const response = await fetch(url);
+          const text = await response.text();
+          modalContent.innerHTML = text;
+          modal.style.display = "block"; // Show the modal
+        } catch (error) {
+          console.error("Failed to load content:", error);
+          modalContent.textContent = "Error loading content. Please try again.";
+          modal.style.display = "block";
+        }
+      }
+
+      // Event listeners for the links
+      termsLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        loadContent("assets/terms.txt");
+      });
+
+      privacyLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        loadContent("assets/privacy.txt");
+      });
 
       // Get the <span> element that closes the modal
-      const span = document.getElementsByClassName("close")[0];
-
-      // When the user clicks on the terms, open the modal
-      terms.onclick = function () {
-        modal.style.display = "block";
-      };
+      const span = document.getElementsByClassName("close-button")[0];
 
       // When the user clicks on <span> (x), close the modal
       span.onclick = function () {
