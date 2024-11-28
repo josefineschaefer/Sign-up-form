@@ -265,3 +265,8 @@ img {
   left: -5px;
   content: "✖";
 }
+
+.asterisk {
+  color: var(--accent-color)
+
+}
